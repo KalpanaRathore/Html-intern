@@ -1,0 +1,123 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.my-container {
+  background-image: url("gallery/imgbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.heading {
+  color: rgb(155, 11, 11);
+  font-weight: 800;
+  text-align: center;
+  line-height: 50px;
+}
+.my-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* Top shadow */ -4px 0 8px rgba(0, 0, 0, 0.1),
+    /* Left shadow */ 4px 0 8px rgba(0, 0, 0, 0.1),
+    /* Right shadow */ 0 16px 24px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+}
+.input-container {
+  width: 100%;
+}
+.input-fields {
+  width: 100%;
+  background-color: rgb(139, 11, 11);
+  color: white;
+  margin-top: 20px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+}
+input::placeholder {
+  color: white;
+}
+.symbol {
+  max-width: 100%;
+}
+.my-btn {
+  color: rgb(114, 17, 17) !important;
+  font-weight: bolder !important;
+  font-size: 20px !important;
+  text-align: center;
+  width: 100%;
+}
+.indexing,
+.index-Con {
+  background-color: rgb(94, 11, 11);
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+.index-Con {
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+}
+
+.indexing-container {
+  position: relative;
+  right: 450px;
+}
+.indexing {
+  width: 45vw;
+  height: 85px;
+  border-radius: 30px;
+}
+.index-container {
+  position: relative;
+  right: 900px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  .symbol {
+    display: none;
+  }
+
+  .indexing {
+    width: 70vw;
+    margin-bottom: 10px;
+    height: 120px;
+  }
+  .index-container {
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .symbol {
+    display: none;
+  }
+  .indexing {
+    min-width: 90vw;
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+  .index-container {
+    position: static;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+  .symbol {
+    display: none;
+  }
+  .indexing-container {
+    position: static;
+  }
+  .indexing {
+    max-width: 100vw;
+    min-height: 380px;
+    margin-bottom: 10px;
+  }
+  .index-container {
+    position: static;
+  }
+  .index-Con {
+    margin-right: 40px;
+  }
+}
